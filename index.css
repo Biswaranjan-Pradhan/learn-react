@@ -1,0 +1,7 @@
+#parent {
+    background-color: yellow;
+}
+
+#child, #child2 {
+    color: red;
+}
