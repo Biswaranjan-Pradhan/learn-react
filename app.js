@@ -1955,7 +1955,7 @@ const Body = () => {
             <div className="res-card-list-container">
                 {
                     restaurantList.map((restaurant) => (
-                        <RestaurantCard resData={restaurant}/>
+                        <RestaurantCard key={restaurant.data.id} resData={restaurant}/>
                     ))
                 }
             </div>
