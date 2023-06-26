@@ -1,7 +1,123 @@
-#parent {
-    background-color: yellow;
+body {
+    padding: 0;
+    margin: 0;
+    font: 16px arial;
 }
 
-#child, #child2 {
-    color: red;
+/* Header */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d3d5df;
+}
+
+.logo {
+    width: 180px; 
+    color: white;
+}
+
+.nav-list-conatiner > ul {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 3rem;
+    font-size: 20px;
+    color: #AD1F34;
+}
+
+.nav-list-conatiner > ul > li {
+    list-style-type: none;
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.nav-list-conatiner > ul > li:hover {
+    display: flex;
+    align-items: center;
+    background-color: #AD1F34;
+    color: white;
+    width: 100%;
+    height: 40%;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+/* Body Component */
+
+/* Search */
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.search-container > .searchbar {
+    padding: 1rem;
+    width: 40%;
+    margin: 2rem 0rem;
+}
+
+.search-container > button {
+    margin: 2rem 1rem;
+    padding: 1rem;
+    font-size: 16px;
+    background-color: #d3d5df;
+    color: #AD1F34;
+    border: 1px solid black;
+    font-weight: 400;
+}
+
+.search-container > .searchbar, button {
+    border-radius: 5px;
+}
+.search-container > button:hover {
+    background-color: #AD1F34;
+    color: white;
+    cursor: pointer;
+}
+
+/* Card */
+
+.res-card-container {
+    flex-basis: 20%;
+    text-align: center;
+    padding: .8rem;
+    background-color: #d3d5df;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: #AD1F34;
+    margin-bottom: 2rem;
+}
+
+.res-card-container:hover {
+    box-shadow: 0 0 8px 3px rgb(82, 80, 80);
+    background-color: #d3d5df;
+    transition: all .3s ease-in-out;
+    border: 1px solid rgb(122, 120, 120);
+    cursor: pointer;
+}
+
+.res-card-container .res-card-img {
+    width: 256px;
+}
+
+.res-card-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4.6rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.res-card-body .res-details {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-top: .8rem;
+    font-size: 12px;
 }
